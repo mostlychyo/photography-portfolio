@@ -3,6 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+  // Always start at the top on load/reload instead of the browser
+  // restoring the previous scroll position.
+  if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
+  window.scrollTo(0, 0);
+</script>
 <title>Chyo Photography | Portfolio</title>
 <meta name="description" content="Photography portfolio — events, portraits, graduations, landscape and product photography. Booking inquiries welcome.">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">

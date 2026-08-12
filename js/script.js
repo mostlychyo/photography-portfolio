@@ -16,7 +16,7 @@ const GALLERY_ITEMS = [
   { category: 'graduations', title: 'Last Study Session',     src: 'images/graduations/IMG_9656.jpg' },
   { category: 'graduations', title: 'Walk to Convocation',    src: 'images/graduations/IMG_0121.jpg' },
   { category: 'graduations', title: 'Bouquet on the Bench',   src: 'images/graduations/IMG_0682.jpg' },
-  { category: 'graduations', title: 'Kindergarten Cap',       src: 'images/graduations/IMG_8099.jpg' },
+  { category: 'graduations', title: 'Kindergarten Cap',       src: 'images/graduations/IMG_8099.jpg', pos: '30% 50%' },
   { category: 'headshots',   title: 'Headshot',               src: 'images/headshots/DSC08547.jpg', pos: '50% 27%' },
   { category: 'headshots',   title: 'Headshot',               src: 'images/headshots/DSC03114-3.jpg' },
   { category: 'portraits',   title: 'At the Plate',           src: 'images/portraits/DSC03156.jpg' },
