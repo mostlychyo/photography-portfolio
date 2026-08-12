@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chyo Photography | Portfolio</title>
+<meta name="description" content="Photography portfolio — events, portraits, graduations, landscape and product photography. Booking inquiries welcome.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📷</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="loader"><span>CHYO PHOTOGRAPHY</span></div>
+
+<!-- ================= NAV ================= -->
+<header class="site-header" id="siteHeader">
+  <div class="nav-wrap">
+    <a href="#home" class="logo">Chyo<span>.</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section id="home" class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content" data-reveal>
+    <p class="eyebrow">Photography Portfolio</p>
+    <h1>Moments, framed<br>with intention.</h1>
+    <p class="hero-sub">Graduations &middot; Headshots &middot; Portraits &middot; Events &middot; Landscape &middot; Product</p>
+    <a href="#portfolio" class="btn btn-outline">View Portfolio</a>
+  </div>
+  <a href="#portfolio" class="scroll-cue" aria-label="Scroll to portfolio"><span></span></a>
+</section>
+
+<!-- ================= PORTFOLIO ================= -->
+<section id="portfolio" class="portfolio">
+  <div class="section-head" data-reveal>
+    <p class="eyebrow">Selected Work</p>
+    <h2>Portfolio</h2>
+  </div>
+
+  <div class="filters" id="filters" data-reveal>
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="graduations">Graduations</button>
+    <button class="filter-btn" data-filter="headshots">Headshots</button>
+    <button class="filter-btn" data-filter="portraits">Portraits</button>
+    <button class="filter-btn" data-filter="events">Events</button>
+    <button class="filter-btn" data-filter="landscape">Landscape</button>
+    <button class="filter-btn" data-filter="product">Product</button>
+  </div>
+
+  <div class="gallery" id="gallery"></div>
+</section>
+
+<!-- ================= QUOTE ================= -->
+<section class="quote-section">
+  <blockquote class="quote" data-reveal>
+    <p>&ldquo;Taking pictures is savoring life intensely, every hundredth of a second.&rdquo;</p>
+    <cite>&mdash; Marc Riboud</cite>
+  </blockquote>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="about">
+  <div class="about-media" data-reveal>
+    <div class="placeholder-tile" data-placeholder="Portrait of Photographer"></div>
+  </div>
+  <div class="about-text" data-reveal>
+    <p class="eyebrow">About</p>
+    <h2>Hi, I'm Chris. <span class="nickname">(or you can call me Chyo)</span></h2>
+    <p>I'm a photographer focused on capturing genuine moments, from the energy of
+      live events to the quiet stillness of a landscape. My work spans celebrations,
+      headshots, graduations, group gatherings, and product photography for small
+      businesses.</p>
+    <p>Every shoot is treated with the same care: honest lighting, thoughtful
+      composition, and images that bring you right back to how it felt to be there.</p>
+    <a href="#contact" class="btn btn-solid">Let's Work Together</a>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="contact">
+  <div class="section-head" data-reveal>
+    <p class="eyebrow">Get In Touch</p>
+    <h2>Book a Session</h2>
+    <p class="contact-sub">Tell me a bit about what you're looking for and I'll get back to you shortly.</p>
+  </div>
+
+  <div class="contact-wrap" data-reveal>
+    <form id="contactForm" class="contact-form" action="https://formspree.io/f/meajgrry" method="POST">
+      <div class="form-row">
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required autocomplete="name">
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required autocomplete="email">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="field">
+          <label for="phone">Phone <span class="opt">(optional)</span></label>
+          <input type="tel" id="phone" name="phone" autocomplete="tel">
+        </div>
+        <div class="field">
+          <label for="sessionType">Session Type</label>
+          <select id="sessionType" name="sessionType">
+            <option value="Event">Event</option>
+            <option value="Headshot">Headshot</option>
+            <option value="Portrait">Portrait</option>
+            <option value="Graduation">Graduation</option>
+            <option value="Landscape">Landscape</option>
+            <option value="Product">Product</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+      </div>
+      <div class="field">
+        <label for="date">Preferred Date <span class="opt">(optional)</span></label>
+        <input type="date" id="date" name="date">
+      </div>
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required placeholder="Tell me about your event, location, and what you have in mind..."></textarea>
+      </div>
+      <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+      <button type="submit" class="btn btn-solid btn-submit">
+        <span class="btn-text">Send Message</span>
+        <span class="btn-spinner" aria-hidden="true"></span>
+      </button>
+      <p class="form-status" id="formStatus" role="status"></p>
+    </form>
+
+    <div class="contact-info">
+      <div class="info-block">
+        <h3>Email</h3>
+        <a href="mailto:mostlychyo@gmail.com">mostlychyo@gmail.com</a>
+      </div>
+      <div class="info-block">
+        <h3>Based In</h3>
+        <p>Toronto &amp; London, Ontario</p>
+      </div>
+      <div class="info-block">
+        <h3>Response Time</h3>
+        <p>Usually within 1–2 business days</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LIGHTBOX ================= -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+  <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous">&#8249;</button>
+  <div class="lightbox-content" id="lightboxContent"></div>
+  <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next">&#8250;</button>
+</div>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <p>&copy; <span id="year"></span> Chyo Photography. All rights reserved.</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
