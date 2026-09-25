@@ -25,7 +25,7 @@ const GALLERY_ITEMS = [
   { category: 'events',      title: 'Club Collaboration',     src: 'images/events/DSC09184.jpg' },
   { category: 'events',      title: 'Hang Time',              src: 'images/events/IMG_2261.jpg' },
   { category: 'events',      title: 'Carnival Hoops',          src: 'images/events/IMG_2269.jpg' },
-  { category: 'events',      title: 'Summer BBQ',             src: 'images/events/DSC00130-2.jpg' },
+  { category: 'events',      title: 'Summer BBQ',             src: 'images/events/DSC00130-2.jpg', pos: '53% 50%' },
   { category: 'events',      title: 'Man Behind the Grill',    src: 'images/events/DSC09977.jpg' },
   { category: 'landscape',   title: 'Harbourfront at Sunset',  src: 'images/landscape/DSC08844-6.jpg' },
   { category: 'landscape',   title: 'Boardwalk Skyline',       src: 'images/landscape/DSC08803-4.jpg' },
