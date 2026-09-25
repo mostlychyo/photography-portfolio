@@ -340,6 +340,13 @@ section{ padding:130px 32px; max-width:var(--maxw); margin:0 auto; }
   align-items:center;
 }
 .about-media .placeholder-tile{ aspect-ratio:4/5; border-radius:var(--radius); }
+.about-photo{
+  width:100%;
+  aspect-ratio:4/5;
+  object-fit:cover;
+  object-position:50% 22%;
+  border-radius:var(--radius);
+}
 .about-text h2{ font-size:clamp(2rem, 4vw, 2.6rem); margin-bottom:.5em; }
 .about-text h2 .nickname{
   font-size:.45em;
